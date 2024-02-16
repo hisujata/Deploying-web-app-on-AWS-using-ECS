@@ -1,5 +1,7 @@
 In the last decades, small and large enterprises have invested heavily in developing bespoke applications. Since these applications have been built and enhanced over a period of time, they are complex and any form of re-engineering to convert it to smaller, modular and independently hosted services is difficult. Managed Container Services from cloud providers allows predictable and reproducible packaging of such apps. This project moved & deployed a classical web app to AWS ECS containers.
 
+#Docker #ECS #LoadBalancer #Fargate
+
 Here is thw architecture👇
 
 <img src="https://github.com/hisujata/Deploying-web-app-on-AWS-using-ECS/blob/master/architecture.png">
