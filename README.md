@@ -4,6 +4,8 @@ Here is thw architecture👇
 
 <img src="https://github.com/hisujata/Deploying-web-app-on-AWS-using-ECS/blob/master/architecture.png">
 
+Okay so lets get into it.
+
 1)	Download the Dockerfile from 
 
 https://d6opu47qoi4ee.cloudfront.net/project-container/Dockerfile
@@ -44,6 +46,14 @@ docker run -d -p 80:8080 helloworld
 
 <public IP address of instance>/HelloWorld
 
+<img src="https://github.com/hisujata/Deploying-web-app-on-AWS-using-ECS/blob/master/Screenshot1.png">
+
+<img src="https://github.com/hisujata/Deploying-web-app-on-AWS-using-ECS/blob/master/Screenshot2.png">
+
+<img src="https://github.com/hisujata/Deploying-web-app-on-AWS-using-ECS/blob/master/Screenshot3.png">
+
+<img src="https://github.com/hisujata/Deploying-web-app-on-AWS-using-ECS/blob/master/Screenshot4.png">
+
 
 Step 2: Upload image to Dockerhub
 
@@ -64,6 +74,14 @@ docker tag <image id> <dockerhub username>/<repository name>:latest
 5) Push the image to Dockerhub
 
 docker push <hub-user>/<repo-name>:latest	
+
+<img src="https://github.com/hisujata/Deploying-web-app-on-AWS-using-ECS/blob/master/Screenshot5.png">
+
+<img src="https://github.com/hisujata/Deploying-web-app-on-AWS-using-ECS/blob/master/Screenshot6.png">
+
+<img src="https://github.com/hisujata/Deploying-web-app-on-AWS-using-ECS/blob/master/Screenshot7.png">
+
+<img src="https://github.com/hisujata/Deploying-web-app-on-AWS-using-ECS/blob/master/Screenshot8.png">
 
 
 Step 3: Creation of ECS cluster to run the image
@@ -87,6 +105,11 @@ Click on Update and then Next
 6) Click on Create
 7) Wait a few minutes for the Cluster to be created
 
+<img src="https://github.com/hisujata/Deploying-web-app-on-AWS-using-ECS/blob/master/Screenshot9.png">
+
+<img src="https://github.com/hisujata/Deploying-web-app-on-AWS-using-ECS/blob/master/Screenshot10.png">
+
+
 #b Verification of running container on ECS			
 
 Instructions	
@@ -99,5 +122,10 @@ Instructions
 ECS cluster is running the container
 
 <DNS of load balancer>:8080/HelloWorld
+
+<img src="https://github.com/hisujata/Deploying-web-app-on-AWS-using-ECS/blob/master/Screenshot11.png">
+
+<img src="https://github.com/hisujata/Deploying-web-app-on-AWS-using-ECS/blob/master/Screenshot12.png">
+
 
 Cloud is always pay per use model and all resources/services that we consume are chargeable. After completing the project, make sure to delete each resource created in reverse chronological order if you do not wish to use the resources.
